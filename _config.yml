@@ -5,7 +5,6 @@ url: "http://www.chaosape.com"
 author:
 name: "Dan DaCosta"
 email: "chaosape@chaosape.com"
-url: "http://www.chaosape.com"
 
 # Build settings
 baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
