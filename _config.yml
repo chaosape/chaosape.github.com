@@ -1,44 +1,34 @@
-# Site settings
-title: chaosape
-author:
+--- 
+author: 
+  email: chaosape@chaosape.com
   name: "Dan DaCosta"
-  email: "chaosape@chaosape.com"
-
-# Build settings
-baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
-markdown: KramdownPygments
-source: .
-destination: ./_site
-permalink: /:title
-paginate: 16
-paginate_path: /page:num/
-
-# Default values
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-
-# Custom variables
-version: "1.1.0"
-
-# Options
+baseurl: /
+city: "Saint Paul"
+country: "United States"
 custom_header: false
 custom_nav_footer: false
-reverse: false
-
-
+defaults: 
+  - 
+    scope: 
+      path: ""
+      type: posts
+    values: 
+      layout: post
+destination: ./_site
 email: chaosape@chaosape.com
-email_full: mailto:chaosape@chaosape.com
-website: chaosape.com
-website_full: http://www.chaosape.com
-tel: 215.868.0711
-city: Saint Paul
+email_full: "mailto:chaosape@chaosape.com"
+google_analytics: ~
+google_maps: "https://www.google.com/maps/place/St+Paul,+MN+55104/@44.9522543,-93.202007,13z/data=!3m1!4b1!4m5!3m4!1s0x87f62a0814790d59:0x17368f96162d25a1!8m2!3d44.9516643!4d-93.162906j3"
+markdown: KramdownPygments
+paginate: 16
+paginate_path: "/page:num/"
+permalink: "/:title"
+reverse: false
+source: "."
 state: Minnesota
-country: United States
+tel: "215.868.0711"
+title: chaosape
+version: "1.1.0"
+website: chaosape.com
+website_full: "http://www.chaosape.com"
 zip: 55104
-google_maps: https://www.google.com/maps/place/St+Paul,+MN+55104/@44.9522543,-93.202007,13z/data=!3m1!4b1!4m5!3m4!1s0x87f62a0814790d59:0x17368f96162d25a1!8m2!3d44.9516643!4d-93.162906j3
-google_analytics: 
