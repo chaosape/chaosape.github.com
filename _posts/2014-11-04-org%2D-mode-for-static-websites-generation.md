@@ -65,7 +65,7 @@ will execute it upon configuration.
 
 First we must require org-mode's publishing functionality.
 
-```lisp
+```emacs-lisp
 (require 'ox-publish)
 ```
 
@@ -85,7 +85,7 @@ phases and the last requires I change `base-ref` and execute my
 configuration via `(load-file "file")` (If you have a suggestion on
 how to fix this please leave a comment!).
 
-```lisp
+```emacs-lisp
 (setf local-base-ref  "file:///home/dacosta/gitrepositories/documents/org/web/chaosape.com/build/")
 (setf chaosape-base-ref  "http://www.chaosape.com/")
 (setq base-ref local-base-ref)
