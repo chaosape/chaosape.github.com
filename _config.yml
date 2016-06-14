@@ -3,8 +3,8 @@ title: chaosape | Master of Doom by Doom Mastered
 description: "Official source of information for Dan DaCosta."
 url: "http://www.chaosape.com"
 author:
-name: "Dan DaCosta"
-email: "chaosape@chaosape.com"
+  name: "Dan DaCosta"
+  email: "chaosape@chaosape.com"
 
 # Build settings
 baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
