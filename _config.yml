@@ -7,7 +7,7 @@ author:
 
 # Build settings
 baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
-markdown: KramdownPygments
+markdown: Kramdown
 source: "."
 destination: ./_site
 permalink: /:title
