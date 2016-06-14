@@ -50,18 +50,18 @@ that returns true when an input list of integers is in ascending order
 and a function that places an integer in the list and yields a new
 list.
 
-~~~ocaml
+```ocaml
   let rec sorted l = match l with
   | [ ] -> true
   | x::[] -> true
   | x1::x2::xs -> x1 <= x2 && sorted (x2::xs)
-~~~
+```
 
-~~~ocaml
+```ocaml
   let rec place e l = match l with
   | [ ] -> [e]
   | x::xs -> if e < x then e::x::xs else x :: (place e xs)
-~~~
+```
 
 
 I would like to show that for all sorted integer lists $xs$ and
@@ -85,13 +85,13 @@ proof more intuitive.
 The obvious way to try to prove this problem is by induction on the
 size of `l`{:.language-ocaml} . When considering a non-empty
 `l`{:.language-ocaml} , the case when `e>=m`{:.language-ocaml} must be
-considered and it must be shown that ~sorted (m::(place e n))~ where
+considered and it must be shown that `sorted (m::(place e n))`{:.language-ocaml} where
 `l = m::n`{:.language-ocaml}. There are two issues here:
 
 1. the head of the list resulting from evaluating `place e
    n`{:.language-ocaml} must be extracted due to the third pattern in
    `match`{:.language-ocaml} , this value may be greater, equal, or
-   less than ~e~ and will require further case analysis
+   less than `e`{:.language-ocaml} and will require further case analysis
 
 2. `sorted (place e n)`{:.language-ocaml} will be the same size as
    `l`{:.language-ocaml} so the induction hypothesis cannot be
@@ -234,17 +234,17 @@ on natural numbers) must be proved before they can be
 utilized. Fortunately, Coq provides many theories that can be used as
 libraries.
 
-~~~coq
+```coq
 
 Require Import Coq.Bool.Bool.
 Require Import Coq.Arith.EqNat.
 Require Import Coq.Lists.List.
-~~~
+```
 
 Definitions in terms of booleans are not given for the less than and
 less than or equal to relations.
 
-~~~coq
+```coq
 Fixpoint blt_nat (m n : nat) : bool :=
   match m with
     | O => match n with
@@ -258,7 +258,7 @@ Fixpoint blt_nat (m n : nat) : bool :=
   end.
 
 Definition ble_nat (m n: nat) := orb (blt_nat m n) (beq_nat m n).
-~~~
+```
 
 The first definition gives the meaning for less than on natural
 numbers.  This syntax should look fairly similar to Caml syntax. The
@@ -277,7 +277,7 @@ result will be crucial when reasoning about how placement of an
 element in list will impact it's sortedness. Trichotomy is proved
 through use of the `sym_blt_false_beq_true`{:.language-coq} lemma.
 
-~~~coq
+```coq
 
 Lemma sym_blt_false_beq_true:
     forall (m n:nat),
@@ -316,12 +316,12 @@ destruct (blt_nat m n) eqn:fst.
      left.
      eapply (sym_blt_false_beq_true m n fst thd).
 Qed.
-~~~
+```
 
 From trichotomy it may be proved that the less than relation implies
 the less than or equal to relation.
 
-~~~coq
+```coq
 
 Lemma blt_imp_ble :
     forall (m n:nat),
@@ -343,7 +343,7 @@ case o.
     rewrite H1 in H.
     inversion H.
 Qed.
-~~~
+```
 
 At this point there is enough of a theory to make an attempt on the
 final result. Therefore,a shallow embedding of the `place`{:.language-coq} and
@@ -355,7 +355,7 @@ write up will assume that the Caml and Coq implementations of these
 functions are semantically equivalent (something that should actually
 be proved).
 
-~~~
+```
 Fixpoint place (e : nat) (l : list nat) :=
   match l with 
     | nil => e :: nil
@@ -374,14 +374,14 @@ match l with
     andb (ble_nat x1 x2) (sorted l')
   end
 end.
-~~~
+```
 
 Now it can be proved that the tail of a sorted list is sorted.  In the
 informal proof, it was easy to see that by evaluation the tail of a
 sorted list is sorted. In Coq, we must do a bit more work therefore,
 it is captured in a lemma.
 
-~~~coq
+```coq
 
 Lemma sorted_is_recursive:
   forall (a:nat) (l:list nat),
@@ -394,11 +394,11 @@ destruct l eqn:Hl.
   decompose [and] H.
   auto.
 Qed.
-~~~
+```
 
 Now we may prove the lemma we used in the informal argument.
 
-~~~coq
+```coq
 Lemma lemma : forall (l:list nat) (a e:nat), 
 sorted (a :: l) = true -> 
 ble_nat a e = true -> 
@@ -431,11 +431,11 @@ induction l.
     rewrite  H1.
     auto.
 Qed.
-~~~
+```
 
 As it was in the informal proof, this lemma yields the theorem.
 
-~~~coq
+```coq
 Theorem theorem :
     forall (l:list nat) (e : nat), 
       sorted l = true -> sorted (place e l) = true.
@@ -454,7 +454,7 @@ destruct l.
     remember (lemma l n e H elta).
     auto.
 Qed.
-~~~
+```
 
 # Comments
 

@@ -7,7 +7,11 @@ author:
 
 # Build settings
 baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
-markdown: Kramdown
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 source: "."
 destination: ./_site
 permalink: /:title
