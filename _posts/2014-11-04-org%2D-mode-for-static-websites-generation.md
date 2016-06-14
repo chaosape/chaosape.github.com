@@ -65,9 +65,9 @@ will execute it upon configuration.
 
 First we must require org-mode's publishing functionality.
 
-~~~lisp
+```lisp
 (require 'ox-publish)
-~~~
+```
 
 Editing my site content is a three phase process consisting of
 writing, editing, and publishing. During the writing and editing
@@ -85,11 +85,11 @@ phases and the last requires I change `base-ref` and execute my
 configuration via `(load-file "file")` (If you have a suggestion on
 how to fix this please leave a comment!).
 
-~~~lisp
+```lisp
 (setf local-base-ref  "file:///home/dacosta/gitrepositories/documents/org/web/chaosape.com/build/")
 (setf chaosape-base-ref  "http://www.chaosape.com/")
 (setq base-ref local-base-ref)
-~~~
+```
 
 From what I have gather, org-mode HTML exporting has two builtin
 publishing functions: `org-html-publish-to-html` and
@@ -99,7 +99,7 @@ the file to the destination directory. I have three pairs of variables
 defining content source and destination for org, css, and image
 files.
 
-~~~emacs-lisp
+```emacs-lisp
 (setf chaosape-repo-location "/home/dacosta/gitrepositories/documents/org/web/chaosape.com/")
 (setf chaosape-css-location "css/")
 (setf chaosape-img-location "img/")
@@ -109,7 +109,7 @@ files.
 (setf chaosape-dst-location (format "%s%s" chaosape-repo-location "build/"))
 (setf chaosape-dst-css-location (format "%s%s" chaosape-dst-location chaosape-css-location))
 (setf chaosape-dst-img-location (concat chaosape-dst-location chaosape-img-location ))
-~~~
+```
 
 Org-modes HTML publishing functionality provides a configuration
 option to set HTML header files uniformly.  Here I define a variable
@@ -117,7 +117,7 @@ containing the content I would like place in the head of all generated
 HTML files. The `base href` must be set in the head so here we build
 the final head content using a format string and `base-ref`.
 
-~~~emacs-lisp
+```emacs-lisp
 (setf chaosape-header
       (format 
        "
@@ -131,11 +131,11 @@ the final head content using a format string and `base-ref`.
        base-ref
       )
 )
-~~~
+```
 
 I also wanted a footer.
 
-~~~emacs-lisp
+```emacs-lisp
 (setf chaosape-footer "
 <a style=\"border-bottom: none;\" href=\"http://www.twitter.com/chaosape/\">
   <img src=\"img/twitter.ico\" alt=\"chaosape on Twitter\"/>
@@ -150,7 +150,7 @@ I also wanted a footer.
   <img style=\"height: 32px; width:32\" src=\"img/aboutme.ico\" alt=\"chaosape on about me\">
 </a>
 ")
-~~~ 
+``` 
 
 There are three components associated with the chaosape.com
 project. The component chaosape.com-top recursively converts all org
@@ -165,7 +165,7 @@ respectively. Once this configuration is in place calling
 `chaosape-dst-location`. You may find additional information about
 this configuration [here](http://orgmode.org/manual/Configuration.html).
 
-~~~emacs-lisp
+```emacs-lisp
 (setf org-publish-project-alist
       `(("chaosape.com" :components
          ("chaosape.com-top" "chaosape.com-css" "chaosape.com-img"))
@@ -206,7 +206,7 @@ this configuration [here](http://orgmode.org/manual/Configuration.html).
          )
        )
     )
-~~~
+```
 
 I wanted my index page to contain a listing of all of my blogs ordered
 by published date. The following function generates such a list based
@@ -222,7 +222,7 @@ approach described
 [here](http://kdr2.com/tech/emacs/orgmode-export-process.html) to
 work.
 
-~~~emacs-lisp
+```emacs-lisp
 (defun org-dblock-write:generate-bloglist (params)
 (let* ((dir "blog")
        (files (directory-files dir t "^[^\\._][^#].*\\.org$" t))
@@ -256,14 +256,14 @@ work.
             (format-time-string "%B %e %Y" (plist-get entry :parsed-date)))))))
 
 (add-hook 'org-export-before-processing-hook (lambda (backend) (org-update-all-dblocks)))
-~~~
+```
 
 I found that the above code left some spurious text on the page.  I am
 not exactly sure why and I am not familiar enough with org-mode to
 know how to remove it; I removed this text by writing a filter that
 modified the final output org-mode was to publish.
 
-~~~emacs-lisp
+```emacs-lisp
 (defun org-html-remove-spurious-dynamic-block-code (string backend info)
   "Remove #+BEGIN:  generate-bloglist."
        (when (and (org-export-derived-backend-p backend 'html)
@@ -272,7 +272,7 @@ modified the final output org-mode was to publish.
 
 (add-to-list 'org-export-filter-final-output-functions
              'org-html-remove-spurious-dynamic-block-code)
-~~~
+```
 
 
 I need the navigation menu to be placed uniformly in the
@@ -280,7 +280,7 @@ content div element (all exported org structured text ends up within
 this div). I was able to get the menu placed correctly by writing
 another filter.
 
-~~~emacs-lisp
+```emacs-lisp
 (defun org-html-add-navigation-after-content-div (string backend info)
   "Put the navigation menu inside the content div."
        (when (and (org-export-derived-backend-p backend 'html)
@@ -299,7 +299,7 @@ another filter.
 
 (add-to-list 'org-export-filter-final-output-functions
              'org-html-add-navigation-after-content-div)
-~~~
+```
 
 # Conclusion
 

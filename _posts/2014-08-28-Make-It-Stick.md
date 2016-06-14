@@ -1,5 +1,5 @@
 ---
-title: Review of "Make It Stick%3a The Science of Successful Learning"
+title: Review of "Make It Stick&#58; The Science of Successful Learning"
 --- 
 
 > This is a book about what people can do for themselves right now in
