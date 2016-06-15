@@ -22,7 +22,7 @@ learners read material, but what prevents them from forgetting it and
 how do they integrate it with other knowledge?  This book reveals what
 most skilled learners are doing internally.
 
-# Effortful Learning
+## Effortful Learning
 
 Spaced retrieval and heterogeneous study are the primary strategies
 suggested in the book; they encourage effortful learning.  Effortful
@@ -51,7 +51,7 @@ accessibility.  When used regularly, these strategies enrich our
 understanding by repeating the encoding, consolidation, and retrieval
 process.
 
-# A Practical Strategy for Learning
+## A Practical Strategy for Learning
 
 For myself, the most fundamental component is to remain mindfully
 engaged in learning. This means constantly assessing whether I
@@ -97,7 +97,7 @@ engagement.
   that I need to understand something better. I find I often use them
   when I cannot properly explain a concept.
 
-# Comments
+## Comments
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */

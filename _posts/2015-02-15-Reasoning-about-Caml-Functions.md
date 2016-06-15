@@ -43,7 +43,7 @@ in this case it is Coq) to capture the meaning of the object langangue
 embeddings rely heavily on a definition of the object language
 semantics within the target language.
 
-# Order Preserving List Insertion
+## Order Preserving List Insertion
 
 Two functions will be considered for this exercise: a boolean function
 that returns true when an input list of integers is in ascending order
@@ -72,7 +72,7 @@ not go into this here, but one may look
 [here](http://www.cs.princeton.edu/~dpw/courses/cos326-12/notes/evaluation.php)
 for some intuition about Caml evalution semantics.
 
-# Informal Proof
+## Informal Proof
 
 I would like to show that for all possible values of `l : int
 list`{:.language-ocaml} and `e : int`{:.language-ocaml}, if `sorted
@@ -101,7 +101,7 @@ considered and it must be shown that `sorted (m::(place e n))`{:.language-ocaml}
 
 The proof that will be presented avoids these issues through a lemma.
 
-## *Lemma*: for all `n : int list`{:.language-ocaml}, `m : int`{:.language-ocaml}, and `e : int`{:.language-ocaml} if `sorted (m::n)`{:.language-ocaml} evaluates to `true`{:.language-ocaml} and `e>=m`{:.language-ocaml} then `sorted (m::(place e n)`{:.language-ocaml} evaluates to `true`{:.language-ocaml}.
+### *Lemma*: for all `n : int list`{:.language-ocaml}, `m : int`{:.language-ocaml}, and `e : int`{:.language-ocaml} if `sorted (m::n)`{:.language-ocaml} evaluates to `true`{:.language-ocaml} and `e>=m`{:.language-ocaml} then `sorted (m::(place e n)`{:.language-ocaml} evaluates to `true`{:.language-ocaml}.
 
 Let `n`{:.language-ocaml} be an arbitrary integer list such that
 `sorted (m::n)`{:.language-ocaml} evaluates to
@@ -168,7 +168,7 @@ evaluation of the assumption `sorted (m::o::p)`{:.language-ocaml}, and
 
 &#x25a0;
 
-## *Theorem*: for  `l : int list`{:.language-ocaml} and `e : int`{:.language-ocaml}, if `sorted l`{:.language-ocaml} evaluates to `true`{:.language-ocaml} then `sorted (place e l)`{:.language-ocaml} evaluates to `true`{:.language-ocaml}.
+### *Theorem*: for  `l : int list`{:.language-ocaml} and `e : int`{:.language-ocaml}, if `sorted l`{:.language-ocaml} evaluates to `true`{:.language-ocaml} then `sorted (place e l)`{:.language-ocaml} evaluates to `true`{:.language-ocaml}.
 
 Let `l`{:.language-ocaml} be an aribitrary integer list such that
 `sorted l`{:.language-ocaml} evaluates to
@@ -201,7 +201,7 @@ to `m::(place e n)`{:.language-ocaml} and it must be shown that
 `sorted (m::(place e n)`{:.language-ocaml} evaluates to
 `true`{:.language-ocaml} which may be proved using the lemma above.
 
-# Formal Proof
+## Formal Proof
 
 The property we are trying to prove is simple. However, tracking
 assumptions, cases, and the constraints they place on quantified terms
@@ -456,7 +456,7 @@ destruct l.
 Qed.
 ```
 
-# Comments
+## Comments
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">

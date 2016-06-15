@@ -2,21 +2,21 @@
 title: org-mode for Static Website Generation
 ---
 
-# Some Context
+## Some Context
 
 This post no longer has a proper context; I am no longer using the
 following approach to generate my website. That said, I think it still
 contains some content that might be useful for someone else trying to
 use org-mode for static website generation. 
 
-# Summary
+## Summary
 
 I was unhappy with my previous website because the overhead of
 presenting content was high. It is my opinion that presenting content
 on a website should require as little non-essential work as possible;
 generating content (e.g., writing) is hard enough.
 
-# The Previous Site
+## The Previous Site
 The previous site used [pagegen](http://pagegen.phnd.net/). Pagegen
 is a static web page site generator that relies on a site template
 file and a directory structure. Content for the site is stored in text
@@ -38,7 +38,7 @@ increased the overhead of generating and presenting knowledge;
 creating simply structured content became a mess of XML. Naturally, I
 just avoided it.
 
-# Onward to [org-mode](http://orgmode.org/)
+## Onward to [org-mode](http://orgmode.org/)
 
 What is essential when presenting content for my site? The answer I
 arrived at is some simple way to structure content and some way to
@@ -301,7 +301,7 @@ another filter.
              'org-html-add-navigation-after-content-div)
 ```
 
-# Conclusion
+## Conclusion
 
 I think this site setup will facilitate more frequent content
 creation. This is something I need to make a habit of if I intend to
@@ -309,7 +309,7 @@ improve my writing skills. One gripe I have about this setup is
 its dependency on this dynamic block magic that requires me to write a
 filter to remove some spurious text.
 
-# Comments
+## Comments
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">
