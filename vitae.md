@@ -164,7 +164,6 @@ detection of overruns. Buffer overruns were detected using
 
 * * * 
 
-
 + Dan DaCosta. [Towards Reasoning About Properties of Imperative
 Programs using Linear Logic](pubs/1503.00826v1.pdf).
 Report submitted in partial fulfillment of my written preliminaries.
