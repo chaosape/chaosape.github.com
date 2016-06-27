@@ -1,9 +1,6 @@
 ---
-title: In a world of multi-core processors, memory caching can break useful
-abstractions.
+title: In a world of multi-core processors, memory caching can break useful abstractions.
 ---
-
-TODO: Use coherency instead of consistency.
 
 It seems [Moore's Law](https://en.wikipedia.org/wiki/Moore%27s_law)
 will remain an accurate model for predicting transistor density in
