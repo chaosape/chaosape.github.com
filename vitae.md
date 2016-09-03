@@ -27,7 +27,7 @@ chaosape@chaosape.com
 
 | **Degree**  | Doctor of Philosophy in Computer Science (in progress) |
 | **Advisor** | Dr. Gopalan Nadathur |
-| **Thesis**  | TBD (formal methods & linear logic) |
+| **Thesis**  | Reasoning about Linear Logic Specifications (working title) |
 | **Time Frame**  | 2011 --- 2017 |
 
 ## Drexel University (M.S.C.S.)
@@ -207,6 +207,6 @@ Adaptive and Resilent Computing Security (ARCS), November 3rd and
 * * * 
 
 | **Programming Languages** | OCaml, Python, C, Java, Teyjus, C++, Perl, Haskell |
-| **Verification Tools** | Isabelle, Abella, jkind, Coq, AutoCorres |
+| **Verification Tools** | Isabelle, AutoCorres, Abella, jkind, Coq |
 | **General Development Tools** | Emacs, GDB, Valgrind, Eclipse, Vim, Xtext, SQLite  |
 | **Web Development Tools** | Pyramid, Jekyll, Ziggurat Foundations | 
