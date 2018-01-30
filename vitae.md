@@ -2,8 +2,6 @@
 layout: default
 ---
 
-
-
 ![Me :^)](img/danonaboat.png)
 
 Dan DaCosta
@@ -28,7 +26,7 @@ chaosape@chaosape.com
 | **Degree**  | Doctor of Philosophy in Computer Science (in progress) |
 | **Advisor** | Dr. Gopalan Nadathur |
 | **Thesis**  | Reasoning about Linear Logic Specifications (working title) |
-| **Time Frame**  | 2011 --- 2017 |
+| **Time Frame**  | 2011 --- 2018 (fin ~2019)|
 
 ## Drexel University (M.S.C.S.)
 
@@ -54,19 +52,50 @@ chaosape@chaosape.com
 | **Title**  | Ph.D. Intern |
 | **Time Frame**  | 2013 --- present |
 
-
-*Formal Software Verification (2015-present)*
+*Air Force Research Lab's (AFRL) Summer of Innovation (2017-present)*
 {: style="text-align: center"}
 
-> [AutoCorress](http://ssrg.nicta.com.au/projects/TS/autocorres/) is
-an extension to the
-[Isabelle Theorem Prover](https://isabelle.in.tum.de/) that encodes a
-large subset of the C programming language into a monadic form better
-suited for human reasoning, *i.e.*, it closely resembles the original
-code. My task is to understand how to effectively use AutoCorress to
-verify relevant properties relating to Rockwell Collins work on the 
-[SMACCMS](http://loonwerks.com/projects/smaccm.html) project.
+> Modeled after the "Google Summer of Code" program, the goal was to
+bring current formal methods theory and practice to bear on AFRL's
+Unmanned Systems Autonomy Services software(UxAS). One critical
+component of UxAS provides waypoint sequences to proprietary autopilot
+software as the unmanned vehicle proceeds through a mission. I was
+responsible for porting this component to the
+[seL4](https://sel4.systems) microkernel. Furthermore, I verified a
+number of important properties about this component using
+[AutoCorress](http://ssrg.nicta.com.au/projects/TS/autocorres/); an
+extension to the
+[Isabelle Theorem Prover](https://isabelle.in.tum.de/) that permits
+formal reasoning about C programs. This work contributed to a
+simulation where an unmanned vehicle remained on mission despite
+loosing signficant software functionality due to cyber attack. The
+results of our work were
+[presented](http://mys5.org/Proceedings/2017/Day_3/2017-S5-Day3_1345_SoI_Task-Service_Planning_Group_Backes.pdf)
+at [S5](http://mys5.org).  Our success during the Summer of Innovation
+influenced AFRL to fund our project past the original period of
+performance.
 
+*Secured Mathematically-Assured Composition of Control Modules
+(2015-2017)*
+{: style="text-align: center"}
+
+> The SMACCM project developed provably secure tools for building UAV
+software. One of the platforms the SMACCM project targeted relied on
+the [seL4](https://sel4.systems) microkernel. On this platform, UAV
+software with different functional behavior was implemented as
+separate seL4 components. This provided each component a memory
+isolation invariant. Building a complete UAV system on this platform
+required a specification for how components were organzied and
+communicated. The [Trusted Build]() tool, something I helped develop,
+could translate this specifications to seL4's less intuitive
+[CAmkES](http://wiki.sel4.systems/CAmkES) build
+specification. Inter-Component communication could, however, allow one
+component to cause deadlock in another. I solved this problem by
+modifying the Trusted Build tool to inject "monitors", i.e., seL4
+components for communication queue management, between two components
+susceptible to such deadlock. With such monitors in place, it was
+proved, formally with AutoCorress, that the deadlock behavior was
+precluded.
 
 *Automated System Requirement Verification (2013-2015)*
 {: style="text-align: center"}
@@ -104,10 +133,11 @@ protocol behaviors to better suit network characteristics. The
 modifications to protocol behavior were implemented such that clients
 required no modification or non-standard configuration. The system
 allowed for easy modification of protocol behavior through
-configuration files and served as an experiment platform for new
+configuration files and served as an experimental platform for new
 protocol modifications. The device was tested during a number of live
 aerial exercises. Later revisions of this project relied extensively
-on the [Click Modular Router](http://www.read.cs.ucla.edu/click/click).
+on the
+[Click Modular Router](http://www.read.cs.ucla.edu/click/click).
 
 *Buffer Overflow Mitigation (2003 --- 2004)*
 {: style="text-align: center"}
