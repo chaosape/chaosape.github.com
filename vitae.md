@@ -245,7 +245,6 @@ Adaptive and Resilent Computing Security (ARCS), November 3rd and
 
 * * * 
 
-| **Programming Languages** | OCaml, Python, C, Java, Teyjus, C++, Perl, Haskell |
+| **Programming Languages** | OCaml, Python, C, Java, Prolog, C++ |
 | **Verification Tools** | Isabelle, AutoCorres, Abella, jkind, Coq |
 | **General Development Tools** | Emacs, GDB, Valgrind, Eclipse, Vim, Xtext, SQLite  |
-| **Web Development Tools** | Pyramid, Jekyll, Ziggurat Foundations | 
