@@ -52,7 +52,38 @@ chaosape@chaosape.com
 | **Title**  | Ph.D. Intern |
 | **Time Frame**  | 2013 --- present |
 
-*Air Force Research Lab's (AFRL) Summer of Innovation (2017-present)*
+*Secured Mathematically-Assured Composition of Control Modules[SMACCM]
+(2015-Present)*
+{: style="text-align: center"}
+
+> The SMACCM project developed provably secure tools for building UAV
+software. One of the platforms the SMACCM project targeted relied on
+the [seL4](https://sel4.systems) microkernel. On this platform, UAV
+software with different functional behavior was implemented as
+separate seL4 components. This provided each component a formally
+proved memory isolation invariant. Building a complete UAV system on
+this platform required a specification for how components were
+organzied and communicated. The [Trusted Build]() tool, something I
+helped develop, could translate this specifications to seL4's less
+intuitive [CAmkES](http://wiki.sel4.systems/CAmkES) build
+specification. Inter-Component communication could, however, allow one
+component to cause deadlock in one another. I solved this problem by
+modifying the Trusted Build tool to inject "monitors", i.e., seL4
+components for communication queue management, between two components
+susceptible to such deadlock. Correct behavior of these monitors was
+formally proved using
+[AutoCorress](http://ssrg.nicta.com.au/projects/TS/autocorres/).
+
+> The SMACCM project has ended and I am now working toward transfering
+the formal methods methodologies developed during the SMACCM project
+to other domains. Supervisory Control and Data Acquisition[SCADA]
+systems is one domain I am currently investigating for such
+transfer. This work can positively impact the safety of SCADA systems
+used to control critical infrastructure, i.e., electrical power grid
+systems, nuclear power station control systems, naval vessel control
+systems.
+
+*Air Force Research Lab's (AFRL) Summer of Innovation (2017-2018)*
 {: style="text-align: center"}
 
 > Modeled after the "Google Summer of Code" program, the goal was to
@@ -74,28 +105,6 @@ results of our work were
 at [S5](http://mys5.org).  Our success during the Summer of Innovation
 influenced AFRL to fund our project past the original period of
 performance.
-
-*Secured Mathematically-Assured Composition of Control Modules
-(2015-2017)*
-{: style="text-align: center"}
-
-> The SMACCM project developed provably secure tools for building UAV
-software. One of the platforms the SMACCM project targeted relied on
-the [seL4](https://sel4.systems) microkernel. On this platform, UAV
-software with different functional behavior was implemented as
-separate seL4 components. This provided each component a memory
-isolation invariant. Building a complete UAV system on this platform
-required a specification for how components were organzied and
-communicated. The [Trusted Build]() tool, something I helped develop,
-could translate this specifications to seL4's less intuitive
-[CAmkES](http://wiki.sel4.systems/CAmkES) build
-specification. Inter-Component communication could, however, allow one
-component to cause deadlock in another. I solved this problem by
-modifying the Trusted Build tool to inject "monitors", i.e., seL4
-components for communication queue management, between two components
-susceptible to such deadlock. With such monitors in place, it was
-proved, formally with AutoCorress, that the deadlock behavior was
-precluded.
 
 *Automated System Requirement Verification (2013-2015)*
 {: style="text-align: center"}
