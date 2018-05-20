@@ -79,7 +79,7 @@ the formal methods methodologies developed during the SMACCM project
 to other domains. Supervisory Control and Data Acquisition[SCADA]
 systems is one domain I am currently investigating for such
 transfer. This work can positively impact the safety of SCADA systems
-used to control critical infrastructure, i.e., electrical power grid
+used to control critical infrastructure, e.g., electrical power grid
 systems, nuclear power station control systems, naval vessel control
 systems.
 
