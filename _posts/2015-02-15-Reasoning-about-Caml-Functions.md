@@ -1,5 +1,6 @@
 ---
 title: Reasoning about Caml Functions
+tags: formal-methods caml coq proofs
 ---
 
 The [computer science department](http://www.cs.umn.edu/) at the

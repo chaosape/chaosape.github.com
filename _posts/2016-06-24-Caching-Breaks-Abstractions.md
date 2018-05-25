@@ -1,5 +1,6 @@
 ---
 title: In a world of multi-core processors, memory caching can break useful abstractions.
+tags: position concurrency hardware abstractions
 ---
 
 It seems [Moore's Law](https://en.wikipedia.org/wiki/Moore%27s_law)

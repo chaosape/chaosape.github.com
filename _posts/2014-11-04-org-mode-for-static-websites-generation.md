@@ -1,5 +1,6 @@
 ---
 title: org-mode for Static Website Generation
+tags: meta website emacs
 ---
 
 ## Some Context

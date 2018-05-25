@@ -1,5 +1,6 @@
 ---
 title: Review of "Make It Stick&#58; The Science of Successful Learning"
+tags: book review self-help learning non-fiction
 --- 
 
 > This is a book about what people can do for themselves right now in
