@@ -1,105 +1,137 @@
 /* -- General Layout -- */
 
-/* Navigation */
 
-#nav, #nav-left { 
-  a {
-    display: block;
-    color: $background-color;
-    padding: 0.33334em 0;
-    font-size: 1.5em;
-    font-weight: 400;
-    @media (min-width: 940px) {
-      font-size: 1em;
-    }
-    &:hover {
-      background-color: lighten($main-color, 5%);
-    }
-  }
-  span {
-      font-weight: 200;
-    }
-}
-
-#nav {
-  @include nav-position(right);
-}
-
-#nav-left {
-  @include nav-position(left);
-}
-
-/* Toggle class to open menu */
-
-#nav.menu-open {
-  @include open(-14rem);
-}
-
-#nav-left.menu-open-left {
-  @include open(14rem);
-}
-
-/* Separator after menu */
-
-#nav-list:after {
+#nav-list
+{
   display: block;
-  content: '';
-  width: 5rem;
-  height: 1px;
-  margin: 23px auto;
-  background-color: $background-color;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
 }
 
-/* Icon menu */
-
-#nav-menu {
-  @include icon-position(right);
+#nav-list input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
 }
 
-#nav-menu-left {
-  @include icon-position(left);
-}
-
-#menu {
+/*
+ * Just a quick hamburger
+ */
+#nav-list span
+{
+  display: block;
+  width: 33px;
   height: 4px;
-  width: 1.5em;
-  background-color: lighten($text-color, 35%);
-  margin-top: 8px;
-  &:after, &:before {
-    content: "";
-    display: block;
-    position: relative;
-    height: 4px;
-    width: 1.5em;
-    background-color: lighten($text-color, 35%);
-    transition: all 0.3s ease-in;
-  }
-  &:before {
-    top: -8px;
-  }
-  &:after {
-    top: 4px;
-  }
-  &.btn-close {
-    background: none;
-  }
-  &.btn-close:before {
-    top: 0;
-    -webkit-transform: rotate(-45deg);
-       -moz-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    background-color: $background-color;
-  }
-  &.btn-close:after {
-    top: -4px;
-    -webkit-transform: rotate(45deg);
-       -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
-    background-color: $background-color;
-  }
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #000000;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
 }
+
+#nav-list span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#nav-list span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#nav-list input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #000000;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#nav-list input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Oh yeah and the last one should go the other direction
+ */
+#nav-list input:checked ~ span:nth-last-child(2)
+{
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 0;
+  padding: 50px;
+  padding-top: 125px;
+  right: -100px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+/*#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}*/
+
+/*
+ * And let's fade it in from the left
+ */
+#nav-list input:checked ~ ul
+{
+  transform: scale(1.0, 1.0);
+  opacity: 1;
+}
+
 
 /* Main content */
 
