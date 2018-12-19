@@ -1,12 +1,12 @@
 ---
 title: Review of "This Boy's Life"
 tags: book review non-fiction
---- 
+---
 
 In early 2000 my mother sent me the book "This Boy's Life" by Tobias
 Wolfe. I had put off reading it until just a few weeks ago when I read
 it over a four day period. Within forty pages I understood why my
-mother liked it and why she thought I would like it. 
+mother liked it and why she thought I would like it.
 
 "This Boy's Life" is the story of Tobias Wolfe's adolesence. During
 this period, Tobias has a yearning to become a stoic intellectual
@@ -15,7 +15,7 @@ reality of his situation, his lack of discipline, and his general
 feelings of unworthiness prevent this yearning from being anything
 but. His mother is the constant in his life yet she moves the two
 around the United States both to reinvent herself and to escape
-destructive relationships. She evetually remarries a man whom
+destructive relationships. She eventually remarries a man whom
 regularly engages in the emotional abuse of Tobias. That all said, we
 never truly feel sorry for Tobias. His persistent arrogance and
 criminal ingenuity often allows him to overcome the adversity of his

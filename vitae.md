@@ -13,12 +13,12 @@ chaosape@chaosape.com
 {:toc style="text-align: center"}
 
 
-* * * 
+* * *
 
-# *Education* 
+# *Education*
 {: style="text-align: center"}
 
-* * * 
+* * *
 
 
 ## University of Minnesota (Ph. D.)
@@ -40,7 +40,7 @@ chaosape@chaosape.com
 | **Degree**  | Bachelor of Science in Computer Science |
 | **Time Frame**  | 1998 --- 2002 |
 
-* * * 
+* * *
 
 # *Professional*
 {: style="text-align: center"}
@@ -160,7 +160,7 @@ detection of overruns. Buffer overruns were detected using
 [electric fence]([http://en.wikipedia.org/wiki/Electric_Fence).
 
 
-* * * 
+* * *
 
 # *Teaching*
 {: style="text-align: center"}
@@ -172,7 +172,7 @@ detection of overruns. Buffer overruns were detected using
 | **Title**  | Teaching Assistant |
 | **Time Frame**  | 2011 --- 2015 |
 
-*Advanced Programming Principles Principles (x3)*
+*Advanced Programming Principles (x3)*
 {: style="text-align: center"}
 
 > Students were introduced to techniques for creating correct, robust, modular
@@ -196,19 +196,19 @@ detection of overruns. Buffer overruns were detected using
 > design principles, concepts, constructs; (2) to make students more familiar
 > with language paradigms and their applications.
 
-* * * 
+* * *
 
 # *Publications*
 {: style="text-align: center"}
 
-* * * 
+* * *
 
 + Dan DaCosta. [Towards Reasoning About Properties of Imperative
 Programs using Linear Logic](pubs/1503.00826v1.pdf).
 Report submitted in partial fulfillment of my written preliminaries.
 
 + Dan DaCosta. [pcapstitch: A tool to collect singleton one-way delay and loss measurements](pubs/pcapstitch.pdf).
-Master thesis's submitted in partial fulfillment of my Ms. of Computer
+Master thesis submitted in partial fulfillment of my Ms. of Computer
 Science from Drexel University.
 
 + Dan DaCosta, Christopher Dahn, Spiros Mancoridis and Vassilis Prevalakis.
@@ -217,12 +217,12 @@ In the IEEE Proceedings of the 2003 International Conference on
 Software Maintenance (ICSM'03), Amsterdam, The Netherlands,
 September, 2003.
 
-* * * 
+* * *
 
 # *Presentations*
 {: style="text-align: center"}
 
-* * * 
+* * *
 
 + Dan DaCosta and Gopalan Nadathur. *Towards Reasoning about
 Properties of Imperative Programs using Linear Logic*. Midwest
@@ -238,12 +238,12 @@ Adaptive and Resilent Computing Security (ARCS), November 3rd and
 4th 2004, Sante Fe, New Mexico.
 
 
-* * * 
+* * *
 
 # *Technical Skills*
 {: style="text-align: center"}
 
-* * * 
+* * *
 
 | **Programming Languages** | OCaml, Python, C, Java, Prolog, C++ |
 | **Verification Tools** | Isabelle, AutoCorres, Abella, jkind, Coq |

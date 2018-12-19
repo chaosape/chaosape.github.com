@@ -1,4 +1,5 @@
 # Site settings
+encoding: utf-8
 title: chaosape
 tagline: "Master of Doom by Doom Mastered"
 author:
@@ -6,7 +7,7 @@ author:
   email: "chaosape@chaosape.com"
 
 # Build settings
-baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
+baseurl: "/" # Change this to your relative path (ex: /blog/), or leave just a /
 highlighter: rouge
 markdown: kramdown
 kramdown:
@@ -45,6 +46,4 @@ state: Minnesota
 country: United States
 zip: 55104
 google_maps: https://www.google.com/maps/place/St+Paul,+MN+55104/@44.9522543,-93.202007,13z/data=!3m1!4b1!4m5!3m4!1s0x87f62a0814790d59:0x17368f96162d25a1!8m2!3d44.9516643!4d-93.162906j3
-google_analytics: 
-
-    
+google_analytics:
