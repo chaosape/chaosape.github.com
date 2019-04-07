@@ -234,7 +234,7 @@ Belgium, November 23-24, 2009.
 
 + Dan DaCosta and Todd Hughes. *Adaptive Code Injection Attack
 Mitigation*. Sante Fe Institute Business Network Topical Meeting -
-Adaptive and Resilent Computing Security (ARCS), November 3rd and
+Adaptive and Resilient Computing Security (ARCS), November 3rd and
 4th 2004, Sante Fe, New Mexico.
 
 
