@@ -63,7 +63,7 @@ software with different functional behavior was implemented as
 separate seL4 components. This provided each component a formally
 proved memory isolation invariant. Building a complete UAV system on
 this platform required a specification for how components were
-organzied and communicated. The [Trusted Build]() tool, something I
+organized and communicated. The [Trusted Build]() tool, something I
 helped develop, could translate this specifications to seL4's less
 intuitive [CAmkES](http://wiki.sel4.systems/CAmkES) build
 specification. Inter-Component communication could, however, allow one
