@@ -127,13 +127,13 @@ written in [Java](https://www.java.com/) using the
 | **Title**  | Senior Member of the Engineering Staff |
 | **Time Frame**  | 2003 --- 2011 |
 
-*Malware Provenance (2010 --- 2011)*
+*Malware Provenance (2010-2011)*
 {: style="text-align: center"}
 
 > Applied statistical modeling techniques to data retrieved via analysis
 of binary malware in an attempt to recover authorship information.
 
-*Transparent Protocol Layer Altering Network Device (2005 --- 2010)*
+*Transparent Protocol Layer Altering Network Device (2005-2010)*
 {: style="text-align: center"}
 
 > Worked with team members in the Advanced Technology Laboratory to
@@ -148,7 +148,7 @@ aerial exercises. Later revisions of this project relied extensively
 on the
 [Click Modular Router](http://www.read.cs.ucla.edu/click/click).
 
-*Buffer Overflow Mitigation (2003 --- 2004)*
+*Buffer Overflow Mitigation (2003-2004)*
 {: style="text-align: center"}
 
 > Developed an experimental technique and framework that allowed buffer
