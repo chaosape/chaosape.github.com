@@ -23,10 +23,8 @@ chaosape@chaosape.com
 
 ## University of Minnesota (Ph. D.)
 
-| **Degree**  | Doctor of Philosophy in Computer Science (in progress) |
-| **Advisor** | Dr. Gopalan Nadathur |
-| **Thesis**  | Reasoning about Linear Logic Specifications (working title) |
-| **Time Frame**  | 2011 --- 2018 (fin ~2019)|
+| **Degree**  | Computer Science Ph.D. Candidate [Not Completed] |
+| **Time Frame**  | 2011 --- 2019 |
 
 ## Drexel University (M.S.C.S.)
 
