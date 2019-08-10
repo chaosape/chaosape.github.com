@@ -99,7 +99,7 @@ extension to the
 [Isabelle Theorem Prover](https://isabelle.in.tum.de/) that permits
 formal reasoning about C programs. This work contributed to a
 simulation where an unmanned vehicle remained on mission despite
-loosing signficant software functionality due to cyber attack. The
+losing significant software functionality due to cyber attack. The
 results of our work were
 [presented](http://mys5.org/Proceedings/2017/Day_3/2017-S5-Day3_1345_SoI_Task-Service_Planning_Group_Backes.pdf)
 at [S5](http://mys5.org).  Our success during the Summer of Innovation
