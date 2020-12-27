@@ -12,32 +12,6 @@ chaosape@chaosape.com
 * TOC
 {:toc style="text-align: center"}
 
-
-* * *
-
-# *Education*
-{: style="text-align: center"}
-
-* * *
-
-
-## University of Minnesota (Ph. D.)
-
-| **Degree**  | Computer Science Ph.D. Candidate [Not Completed] |
-| **Time Frame**  | 2011 --- 2019 |
-
-## Drexel University (M.S.C.S.)
-
-| **Degree**  | Master of Science in Computer Science |
-| **Advisor** | Dr. Spiros Mancoridis |
-| **Thesis**  | pcapstich: A Tool to Collect Singleton One-way Delay and Loss Measurements |
-| **Time Frame**  | 2002 --- 2011 |
-
-## Drexel University (B.S.C.S.)
-
-| **Degree**  | Bachelor of Science in Computer Science |
-| **Time Frame**  | 1998 --- 2002 |
-
 * * *
 
 # *Professional*
@@ -45,10 +19,21 @@ chaosape@chaosape.com
 
 * * *
 
+## Amazon Web Services
+| **Title**  | Applied Scientist |
+| **Time Frame**  | 2019 --- Present |
+
+* VPC Reachability Analyzer / Inspector (2019-Present) *
+{: style="text-align: center"}
+
+> Significant contributor in internal AWS service that applies formal
+methods to network configurations at scale to answer questions about what
+network resources are reachable without interacting with the date plane. 
+
 ## Rockwell Collins
 
 | **Title**  | Ph.D. Intern |
-| **Time Frame**  | 2013 --- present |
+| **Time Frame**  | 2013 --- 2019 |
 
 *Secured Mathematically-Assured Composition of Control Modules[SMACCM]
 (2015-Present)*
@@ -157,6 +142,29 @@ programs into ones that would dynamically increase buffer size upon
 detection of overruns. Buffer overruns were detected using
 [electric fence]([http://en.wikipedia.org/wiki/Electric_Fence).
 
+* * *
+
+# *Education*
+{: style="text-align: center"}
+
+* * *
+
+## University of Minnesota (Ph. D.)
+
+| **Degree**  | Computer Science Ph.D. Candidate [Not Completed] |
+| **Time Frame**  | 2011 --- 2019 |
+
+## Drexel University (M.S.C.S.)
+
+| **Degree**  | Master of Science in Computer Science |
+| **Advisor** | Dr. Spiros Mancoridis |
+| **Thesis**  | pcapstich: A Tool to Collect Singleton One-way Delay and Loss Measurements |
+| **Time Frame**  | 2002 --- 2011 |
+
+## Drexel University (B.S.C.S.)
+
+| **Degree**  | Bachelor of Science in Computer Science |
+| **Time Frame**  | 1998 --- 2002 |
 
 * * *
 
