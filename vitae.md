@@ -24,7 +24,7 @@ chaosape@chaosape.com
 | **Title**  | Applied Scientist |
 | **Time Frame**  | 2019 --- Present |
 
-* VPC Reachability Analyzer / Inspector (2019-Present) *
+*VPC Reachability Analyzer / Inspector (2019-Present)*
 {: style="text-align: center"}
 
 > Significant contributor in internal AWS service relied on by 
