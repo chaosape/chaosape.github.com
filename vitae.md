@@ -26,9 +26,11 @@ chaosape@chaosape.com
 * VPC Reachability Analyzer / Inspector (2019-Present) *
 {: style="text-align: center"}
 
-> Significant contributor in internal AWS service that applies formal
-methods to network configurations at scale to answer questions about what
-network resources are reachable without interacting with the date plane. 
+> Significant contributor in internal AWS service relied on by 
+[VPC Reachability Analyzer](https://docs.aws.amazon.com/vpc/latest/reachability/what-is-reachability-analyzer.html) 
+and [Inspector](https://aws.amazon.com/inspector/) that applies formal
+methods to network configurations to answer questions about reachability 
+between network resources. 
 
 ## Rockwell Collins
 
