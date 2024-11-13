@@ -212,6 +212,9 @@ detection of overruns. Buffer overruns were detected using
 
 * * *
 
++ Sam Bayless, John Backes, Dan DaCosta, Benjamin F. Jones, Nate Launchbury, Patrick Trentin, Kelsey Jewell, Sagar Joshi, Michael Q. Zeng, Nandita Mathews. [Debugging network reachability with blocked paths](https://www.amazon.science/publications/debugging-network-reachability-with-blocked-paths). CAV 2021.
+
+
 + Dan DaCosta. [Towards Reasoning About Properties of Imperative
 Programs using Linear Logic](pubs/1503.00826v1.pdf).
 Report submitted in partial fulfillment of my written preliminaries.
@@ -232,6 +235,10 @@ September, 2003.
 {: style="text-align: center"}
 
 * * *
+
++ Dan DaCosta. *Formally Verifying Security and Compliance Mandates using AWS
+Network Access Analyzer*. High Confidence Software and Systems Conference
+Series, May 8-10, 2023. 
 
 + Dan DaCosta and Gopalan Nadathur. *Towards Reasoning about
 Properties of Imperative Programs using Linear Logic*. Midwest
